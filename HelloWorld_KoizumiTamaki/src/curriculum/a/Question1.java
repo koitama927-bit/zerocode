@@ -103,7 +103,7 @@ public class Question1 {
 		
 		int score = 80; // int型の変数scoreを宣言し、８０を代入
 		score = score + 20; // scoreの現在の値(80)に20を足して、scoreに再代入
-		System.out.println( "最終スコア:" + score ); 
+		System.out.println( "最終スコア:" + score ); // score変数を利用して、最終スコアを表示
 	
 	}
 

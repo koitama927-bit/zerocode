@@ -117,8 +117,8 @@ public class Question1 {
 		
 		
 		double price = 99.99; // double型の変数priceを宣言し、99.99を代入
-		int price2 = (int) price; // double型priceをint型に変換（小数点以下切り捨て）
-		System.out.println( "整数価格:" + price2 ); // 変換した変数を利用して表示
+		int newprice = (int) price; // double型priceをint型に変換（小数点以下切り捨て）
+		System.out.println( "整数価格:" + newprice ); // 変換した変数を利用して表示
 		
 		
 		//Q9
@@ -158,8 +158,8 @@ public class Question1 {
 		
 		
 		String text = "私はJavaが好きです。Javaは楽しい！"; // String型の変数textを宣言し、文を代入
-		String text2 = text.replace ( "Java",  "Python" ); // String型の変数text2を宣言し、”Java”を”Python”に置き換える
-		System.out.println( text2 ); // 置き換えた文を表示
+		String newtext = text.replace ( "Java",  "Python" ); // String型の変数text2を宣言し、”Java”を”Python”に置き換える
+		System.out.println( newtext ); // 置き換えた文を表示
 		
 		
 	}

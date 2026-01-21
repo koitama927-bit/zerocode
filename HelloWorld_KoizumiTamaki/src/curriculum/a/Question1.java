@@ -13,23 +13,23 @@ public class Question1 {
 		
 		//Q1
 		 
-		byte byteNum; // 変数byteNumを宣言し、初期値を設定
+		byte byteNum = 0; // 変数byteNumを宣言し、初期値を設定
 		
-		short shortNum; // 変数shortNumを宣言し、初期値を設定
+		short shortNum = 0; // 変数shortNumを宣言し、初期値を設定
 		
-		int intNum; // 変数intNumを宣言し、初期値を設定
+		int intNum = 0; // 変数intNumを宣言し、初期値を設定
 		
-		long longNum; // 変数longNumを宣言し、初期値を設定
+		long longNum = 0L; // 変数longNumを宣言し、初期値を設定
 		
-		float floatNum; // 変数floatNumを宣言し、初期値を設定
+		float floatNum = 0.0f; // 変数floatNumを宣言し、初期値を設定
 		
-		double doubleNum; // 変数doubleNumを宣言し、初期値を設定
+		double doubleNum = 0.0; // 変数doubleNumを宣言し、初期値を設定
 		
-		char letter; // 変数letterを宣言し、初期値を設定
+		char letter = '\u0000'; // 変数letterを宣言し、初期値を設定
 		
-		String letters; // 変数lettersを宣言し、初期値を設定
+		String letters = null; // 変数lettersを宣言し、初期値を設定
 		
-		boolean isBoolean; //変数isBooleanを宣言し、初期値を設定
+		boolean isBoolean = false; //変数isBooleanを宣言し、初期値を設定
 		
 		/*
 		 *[詳細]Question1で設定した初期値に新たな数値を代入する。
@@ -135,6 +135,31 @@ public class Question1 {
 		int num = 50;// int型の変数numを宣言し、50を代入
 		String nuM = String.valueOf(num); // intを文字列に変換
 		System.out.println( "‟得点：" + nuM + "点‟");  // 変換した変数を利用して表示
+		
+		
+		//Q11
+		
+		
+		int a = 10; // int型の変数aを宣言し、10を代入
+		int b = 20; // int型の変数bを代入し、20を代入
+		boolean result = ( a < b ); // boolean型の変数resultにa<bの比較演算子を代入
+		System.out.println( result ); // 結果を表示
+		
+		
+		//Q12
+		
+		
+		int x = 15; // int型の変数xを宣言し、15を代入
+		String  y =  x > 10 ? " OK " : " NG " ; // 三項演算子を代入xが10以上ならOK、そうでなければNGの表示
+		System.out.println( y ); // 結果を表示
+		
+		
+		//Q13
+		
+		
+		String text = "私はJavaが好きです。Javaは楽しい！"; // String型の変数textを宣言し、文を代入
+		String text2 = text.replace ( "Java",  "Python" ); // String型の変数text2を宣言し、”Java”を”Python”に置き換える
+		System.out.println( text2 ); // 置き換えた文を表示
 		
 		
 	}

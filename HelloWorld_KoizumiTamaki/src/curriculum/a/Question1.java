@@ -150,7 +150,7 @@ public class Question1 {
 		
 		
 		int x = 15; // int型の変数xを宣言し、15を代入
-		String  y =  x >= 10 ? " OK " : " NG " ; // 三項演算子を代入xが10以上ならOK、そうでなければNGの表示
+		String  y =  x >= 10 ? " OK " : " NG " ; // 三項演算子を代入、xが10以上ならOK、そうでなければNGの表示
 		System.out.println( y ); // 結果を表示
 		
 		

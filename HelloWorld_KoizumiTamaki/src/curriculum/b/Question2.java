@@ -85,15 +85,72 @@ public class Question2 {
 		//Q8
 		
 		
-		String input;
-		System.out.print( "文字列を入力: " );
-	    input = scanner.nextLine();
-		if ( input == null || input.isEmpty() ) { System.out.println( "入力が無効です" ); }
-            
-            
-		scanner.close();
+		String input; // string型の変数inputを宣言
+		System.out.print( "文字列を入力: " ); 
+	    input = scanner.nextLine(); // コンソール入力を受け取る
+		if ( input == null || input.isEmpty() ) { System.out.println( "入力が無効です" ); } // 入力がnullまたは空文字だった場合、無効の表示
+		
+		
+		//Q9
+		
+		
+		int day; // int型の変数dayを宣言
+		System.out.print( "1～7の数字を入力: " );
+		day = scanner.nextInt(); // コンソール入力を受け取る
+		
+		switch ( day ) {
+		   case 1:
+		    System.out.println( "月曜日" );
+		    break;
+		   case 2:
+		    System.out.println( "火曜日" );
+		    break;
+		   case 3:
+		    System.out.println( "水曜日" );
+		    break;
+		   case 4:
+		    System.out.println( "木曜日" );
+		    break;
+		   case 5:
+		    System.out.println( "金曜日" );
+		    break;
+		   case 6:
+		    System.out.println( "土曜日" );
+		    break;
+		   case 7:
+		    System.out.println( "日曜日" );
+		    break;
+		   default:
+		    System.out.println( "無効な入力です" ); } // 数値に対応した曜日の表示、いずれにも該当しない場合、無効の表示
+		
+		
+		// Q10
+		
+		
+		int month; // int型の変数monthを宣言
+		System.out.print( "1～12の数字を入力: " );
+		month = scanner.nextInt(); // コンソール入力を受け取る
+		
+		switch (month) {
+		   case 12 : case 1 : case  2 :
+		    System.out.println( "冬" ); // 12,1,2の入力で“冬”の表示
+		    break;
+		   case 3 : case 4 : case 5 :
+		    System.out.println( "春" ); // 3,4,5の入力で“春”の表示
+		    break; 
+		   case 6 : case 7 : case 8 :
+		    System.out.println( "夏" ); // 6,7,8の入力で“夏”の表示
+		    break;
+		   case 9 : case 10 : case 11 :
+		    System.out.println( "秋" ); // 9,10,11の入力で“秋”の表示
+		    break;
+		   default:
+		    System.out.println( "無効な月です" ); } // いずれにも該当しない場合、“無効な月です”の表示
+
+		
+         scanner.close();
 		
 		
 	}
-
+		
 }

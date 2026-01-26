@@ -30,10 +30,10 @@ public class Question2 {
 		//Q3
 		
 		
-		int agE = 18; // int型の変数Ageに18を代入
-		if ( agE  >= 20 ) { System.out.println ( "成人です" );} // Ageが20以上の場合、“成人です”と表示
-		else if ( agE  >= 13 && agE <= 19 ) { System.out.println ( "ティーンエイジャーです" );} // Ageが13以上19以下の場合、“ティーンエイジャーです”と表示
-		else { System.out.println ( "子供です" );} // Ageが12以下の場合、“子供です”と表示
+		int ageq3 = 18; // int型の変数ageq3に18を代入
+		if ( ageq3  >= 20 ) { System.out.println ( "成人です" );} // ageq3が20以上の場合、“成人です”と表示
+		else if ( ageq3  >= 13 && ageq3 <= 19 ) { System.out.println ( "ティーンエイジャーです" );} // Ageが13以上19以下の場合、“ティーンエイジャーです”と表示
+		else { System.out.println ( "子供です" );} // ageq3が12以下の場合、“子供です”と表示
 		
 		
 		//Q4
@@ -60,25 +60,25 @@ public class Question2 {
 		//Q6
 		
 		
-		int valse; // int型変数valseを宣言
+		int value; // int型変数valueを宣言
 		System.out.print("整数を入力: ");
-		valse = scanner.nextInt(); // コンソール入力で整数を受け取る
+		value = scanner.nextInt(); // コンソール入力で整数を受け取る
 		
-		if (valse % 2 == 0) { System.out.println( "偶数です" ); } // 数値が偶数であれば、“偶数です”と表示
+		if (value % 2 == 0) { System.out.println( "偶数です" ); } // 数値が偶数であれば、“偶数です”と表示
 		else { System.out.println( "奇数です"); } // 数値が奇数であれば、“奇数です”と表示
 		
 		
 		//Q7
 		
 		
-		int scorE; // int型の変数Scoreを宣言
+		int scoreInput; // int型の変数Scoreを宣言
 		System.out.print( "scoreを0から100の整数で入力: " );
-		scorE = scanner.nextInt(); // コンソール入力で数値を受け取る
-		scanner.nextLine();
+		scoreInput = scanner.nextInt(); // コンソール入力で数値を受け取る
+	
 		
-		if ( scorE >= 90) { System.out.println ( "優" ); } // scoreが90以上なら“優”と表示
-	    else if ( scorE >= 70 ) { System.out.println ( "良" ); } // scoreが70以上なら“良”と表示
-	    else if ( scorE >= 50 ) { System.out.println ( "可" ); } // scoreが50以上なら“可”と表示
+		if ( scoreInput >= 90) { System.out.println ( "優" ); } // scoreが90以上なら“優”と表示
+	    else if ( scoreInput >= 70 ) { System.out.println ( "良" ); } // scoreが70以上なら“良”と表示
+	    else if ( scoreInput >= 50 ) { System.out.println ( "可" ); } // scoreが50以上なら“可”と表示
 	    else { System.out.println( "不可" ); } // scoreが50未満なら“不可”の表示
 		
 		
@@ -86,6 +86,7 @@ public class Question2 {
 		
 		
 		String input; // string型の変数inputを宣言
+		scanner.nextLine();
 		System.out.print( "文字列を入力: " ); 
 	    input = scanner.nextLine(); // コンソール入力を受け取る
 		if ( input == null || input.isEmpty() ) { System.out.println( "入力が無効です" ); } // 入力がnullまたは空文字だった場合、無効の表示

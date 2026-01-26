@@ -102,15 +102,24 @@ public class Question3 {
 	
 	Scanner scanner = new Scanner (System.in);
 	while ( true ) {
-    System.out.print("数値を入力してください（終了: 0）: "); // コンソール入力で数値を受け取る
-	int input = scanner.nextInt();	 
+    System.out.print("数値を入力してください（終了: 0）: "); // コンソール入力で数値を受け取る 
+    
+    if ( scanner.hasNextInt() ) {
+	int input = scanner.nextInt();	// 入力が数値か判断する
+	
 	if (input == 0) { // 入力された数値が0の場合ループを終了する
 		break; }
 	System.out.println( "入力された数値: " + input );  // 入力された数値を表示する
 	}
+    else { 
+    System.out.println( "入力が無効です" ); // 数値以外が入力された際表示
+    scanner.next(); }
+	
+	}
 	
 	System.out.println( "終了しました" );  // 0が入力された場合、終了の表示をする
 
+	
 	
 	// Q11
 	
@@ -126,8 +135,6 @@ public class Question3 {
 	
 	// Q12
 	
-	
-	String [] units =  { "パソコン",  "冷蔵庫", "扇風機", "洗濯機", "加湿器", "テレビ", "ディスプレイ" }; // 商品一覧の定義
 	
 	System.out.print("商品名をしてください（、区切り）: "); // コンソール入力を受けとる
 	scanner.nextLine(); // Q10の改行を消化する

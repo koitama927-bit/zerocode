@@ -57,7 +57,7 @@ public class Question4 {
 		// Q5
 		
 		
-		int [] numbers5 = { 1, 2, 3, 4, 5, }; //int型の配列numbers5を宣言
+		int [] numbers5 = { 1, 2, 3, 4, 5 }; //int型の配列numbers5を宣言
 		for ( int d  : numbers5 ) {
 			System.out.println( d * 2 ); // 各要素の2倍をを表示
 			
@@ -75,17 +75,19 @@ public class Question4 {
 		    
 		    if ( scanner.hasNextInt() ) {
 		    int input = scanner.nextInt(); // 入力が数値か判断する
-		    boolean found = false;  // あてはまる数値が見つかった場合、false
 		    
 		    if ( input == 0 ) {
-		       break; // 0の入力があった段階で終了する
-		    }
-
+			       break; // 0の入力があった段階で終了する
+			    }
+		    
+		    boolean found = false;  // あてはまる数値が見つかった場合、false
+		    
 		    for (int p : numbers6) {
 		        if (p == input) {
 		            found = true;
 		            break; // 配列の要素の中に当てはまる数字が見つかった場合、そこでループを終了する
 		        }
+		   
 		    }
 
 		    if (found) {
@@ -93,12 +95,95 @@ public class Question4 {
 		    } else {
 		        System.out.println(input + "は配列に含まれていません");} // 配列に当てはまらなかった場合の表示
 		    
-		   
-		    
-		    }
+		    } else {
+		    	System.out.println("数値を入力してください");
+		        scanner.next(); }
 		}
+		
 		scanner.close();
-		    
+		
+		
+		// Q7
+		
+		
+		int [][] array = { // 2次元配列arrayを宣言
+				{ 1, 2 },
+				{ 3, 4 },
+				{ 5, 6 }
+		};
+		
+		for ( int i = 0; i < array.length;  i++) { // 行をループ
+			for ( int j = 0; j < array[i].length;  j++) {  // 列ループ
+			System.out.print( array[i][j] + "　" ); // 要素をすべて表示
+			}
+			System.out.println(); // 改行
+			}
+		
+		
+		// Q8
+		
+		
+		int [][] array2 = { // 2次元配列array2を宣言
+				{ 10, 20, 30 },
+				{ 40, 50, 60 },
+				{ 70, 80, 90 }
+		};
+		
+		int sum2 = 0; // array2の合計値を格納する変数を宣言
+		for ( int i = 0;  i < array2.length;  i++) { 
+			 for ( int j = 0; j  <  array2[i].length;  j++) {
+			  sum2 += array2[i][j]; // 行、列それぞれの数値をsum2に格納
+			 }
+			}
+			System.out.println(  "合計値："  + sum2 ); // 合計値を表示
+		
+		
+		// Q9
+			
+			
+		int [][] array3 = { // 2次元配列array3を宣言
+				{ 12, 15, 18 },
+				{ 6, 19, 25 },
+				{ 30, 2, 10 }
+		};
+		
+        int max2 = array3[0][0];
+        int min2 = array3[0][0];
+				
+        for ( int i = 0; i < array3.length; i++ ) { // 行のループ
+            for ( int j = 0; j < array3[i].length; j++) { // 列のループ
+                if ( array3[i][j] > max2 ) {
+                    max2 = array3[i][j]; // 最大値との比較
+                }
+                if ( array3[i][j] < min2 ) {
+                    min2 = array3[i][j]; // 最小値との比較
+                }
+            }
+        }
+        System.out.println( "最大値: " + max2 ); // 最大値の表示
+        System.out.println( "最小値: " + min2 ); // 最小値の表示
+			
+			
+		// Q10
+        
+        
+        int[][][] array4 = { // 3次元配列array4を宣言
+        	    { {1, 2}, {3, 4} },
+        	    { {5, 6}, {7, 8} }
+        	    
+        	};
+			
+        for ( int i = 0; i <  array4.length; i++ ) { // 1次元目のループ
+            for ( int j = 0; j < array4[i].length; j++ ) { // 2次元目のループ
+                for ( int k = 0; k <  array4[i][j].length;  k++) { // 3次元目のループ
+                    System.out.print( array4[i][j][k]  +  " " ); 
+                }
+                System.out.println(); // 行ごとの改行
+            }
+            System.out.println(); // ブロックごとの改行
+            
+            
+        }
 	}
 
 }

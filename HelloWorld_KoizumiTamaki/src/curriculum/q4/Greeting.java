@@ -1,4 +1,4 @@
-package q4;
+package curriculum.q4;
 
 public class Greeting {
 
@@ -7,8 +7,5 @@ public class Greeting {
 			
 	}
 
-	public static void main(String[] args) {
-		
-	}
 
 }

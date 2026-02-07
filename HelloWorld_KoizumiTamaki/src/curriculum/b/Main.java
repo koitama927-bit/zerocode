@@ -1,7 +1,7 @@
 package curriculum.b;
 
-import q4.Greeting;
-import q5.Animal;
+import curriculum.q4.Greeting;
+import curriculum.q5.Animal;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package q5;
+package curriculum.q5;
 
 public class Animal {
 	
